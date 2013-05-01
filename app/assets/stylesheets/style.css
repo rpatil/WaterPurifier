@@ -1,0 +1,156 @@
+
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline }
+
+/* Left & Right alignment */
+
+.left { float:left;}
+.right { float:right;}
+.center{ text-align:center}
+.wrapper {width:100%; overflow:hidden;}
+
+/* Global properties ======================================================== */
+
+body{ background:#fff; border:0; font:14px Arial, Helvetica, sans-serif; color:#40434c; line-height:21px; min-width:960px;}
+
+.css3{border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; box-shadow: 0 0 4px rgba(0, 0, 0, .4); -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .4); -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .4); behavior: url(js/pie.php); position: relative;}
+
+/* Global Structure ============================================================= */
+
+.body1{ background:url('/assets/bg_top.jpg') top center no-repeat; overflow:hidden}
+.body2{ background:url('/assets/bg_img.jpg') center 84px no-repeat; overflow:hidden}
+
+.body3{ background:url('/assets/bg.jpg') top center repeat; overflow:hidden}
+.body4{ background:url('/assets/bg_top2.jpg') top center no-repeat; overflow:hidden}
+
+.body5{ background:url('/assets/bg2.jpg') top center repeat; overflow:hidden}
+.body6{ background:url('/assets/bg_top3.jpg') top center no-repeat; overflow:hidden}
+
+/* ============================= main layout ====================== */
+
+a{ color:#2175cb; text-decoration: none; outline:none}
+a:hover{ text-decoration: underline}
+h1{ float: left; padding:40px 0 0 0}
+h2{ font-size:40px; font-weight:700; color:#fff; line-height:1.2em; text-transform:uppercase; padding:10px 0 9px 0; letter-spacing:-1px;}
+h2 span{ display:block; font-weight:400; margin-top:-13px;}
+h3{ font-size:32px; line-height:1.5em; color:#2e2f31; text-transform:uppercase; font-weight:400; padding:12px 0 10px 0; letter-spacing:-1px;}
+h3 span{ display:block; margin-top:-13px;}
+p{ padding-bottom:21px;}
+
+/* ============================= header ====================== */
+header{ width:100%; height:308px; position:relative; z-index:1}
+#page1 header{height:449px;}
+
+#page1 header .wrapper{ position:relative; z-index:3}
+
+#logo{ display:block; background:url('/assets/logo.png') no-repeat; width:280px; height:88px; text-indent:-5000px}
+#menu { float:left; padding:46px 0 0 43px}
+#menu li { float:left; padding-right:24px; position:relative}
+#menu a{ display:block; font-size:15px; font-weight:600; color:#fff; background:none; line-height:33px; text-transform:uppercase}
+#menu a span{ display:block;}
+#menu a span span{ margin:0 16px;}
+#menu li:hover a, #menu .active a{text-decoration:none; background:url('/assets/menu1_left.png') top left no-repeat}
+#menu li:hover a span, #menu .active a span{ background:url('/assets/menu1_right.png') top right no-repeat}
+#menu li:hover a span span, #menu .active a span span{ background: url('/assets/menu1_bg.gif') top repeat-x}
+
+#menu .ul_1{ position:absolute; top:33px; left:0px; width:111px; z-index:10}
+#menu .ul_1 li{ float:none; width:100%; z-index:10}
+#menu .ul_1 a{ font-size:13px; font-weight:400; position:relative; z-index:10}
+#menu .ul_1 li:hover a{ color:#111}
+#menu .ul_1 a{text-decoration:none; background:url('/assets/menu1_left.png') top left no-repeat}
+#menu .ul_1 a span{ background:url('/assets/menu1_right.png') top right no-repeat}
+#menu .ul_1 a span span{ background: url('/assets/menu1_bg.gif') top repeat-x}
+
+#menu .ul_2 { position:absolute; top:0; left:111px; z-index:1;}
+#menu .ul_2 li{ width:auto}
+#menu li:hover .ul_2 a, #menu .ul_2 a{ background:url('/assets/menu2_left.png') top left no-repeat; color:#fff;}
+#menu .first{ position:absolute; left:90px; width:0; height:33px; background: url('/assets/menu_right.png') right 0 no-repeat; top:0;}
+#menu li:hover .ul_2 a span, #menu .ul_2 a span{background:url('/assets/menu2_right.png') top right no-repeat}
+#menu li:hover .ul_2 a span span, #menu .ul_2 a span span{ background: url('/assets/menu2_bg.gif') top repeat-x}
+#menu li:hover .ul_2 li:hover a, #menu  .ul_2 li:hover a{ color:#3679ff}
+
+#head{ text-align:center; position:relative; top:-22px}
+
+/* ============================= content ====================== */
+
+#content{ width:100%; overflow:hidden; padding-bottom:20px; color:#fff;}
+#content2{width:100%; overflow:hidden; padding-top:30px; padding-bottom:29px;}
+#content p{ line-height:20px; color:#fff;}
+
+.pad_bot1{ padding-bottom:15px;}
+.pad_bot2{ padding-bottom:4px;}
+.marg_right1{ margin-right:20px;}
+.marg_right2{ margin-right:10px;}
+
+.button{ font-size:13px; color:#fff; text-transform:uppercase; background:url('/assets/button1_bg.gif') top repeat-x #2057e9; display:inline-block; line-height:33px;border-radius:16px; -moz-border-radius:16px; -webkit-border-radius:16px; behavior: url(js/pie.php); position: relative; padding:0 16px; font-weight:400}
+.button:hover{ text-decoration: none; background: url('/assets/button1_hover.gif') 0 0 repeat-x #0b0f16}
+
+
+
+.dropcap_1{ float:left; background:url('/assets/dropcap_bg.png') 0 0 no-repeat; width:42px; height:42px; font-size:30px; color:#fff; font-weight:400; margin-right:9px; padding-bottom:21px;line-height:42px; text-align:center;}
+.dropcap_2{ float:left; font-size:30px; color:#fff; line-height:1.2em; background:url('/assets/dropcap_bg2.png') no-repeat; width:77px; height:71px; padding-top:6px; text-align:center; margin-right:8px;}
+.dropcap_2 span{ display:block; margin-top:-6px;}
+
+.calendar li{ padding-bottom:40px; width:100%; overflow:hidden}
+.calendar .no_pad{ padding-bottom:0}
+
+#content .standarts{ line-height:21px; margin-bottom:-15px;}
+#content .standarts a{ color:#fff; padding-top:5px;}
+
+.color1{ color:#2175cb}
+
+.font1{ font-size:24px; line-height:1.2em; text-transform:uppercase; letter-spacing:-1px; display:block; padding-top:5px;}
+.font1 span{ display:block; margin-top:-5px}
+
+dl.list1{ margin-top:-5px; padding-bottom:8px;}
+.list1 li, .list1 dd{ line-height:32px;}
+.list1 a{ padding-left:15px; background:url('/assets/marker_1.png') 0 4px no-repeat; color:#40434c}
+.list1 a:hover{ color:#2175cb; text-decoration:none}
+#content .list1 a{ color:#fff;}
+#content .list1 a:hover{ color:#2175cb; text-decoration: none}
+
+#page4 .links1:hover{text-decoration:none; color:#fff;}
+#page4 .links2:hover{text-decoration:none; color:#000;}
+
+#page3 .marg_right2{ margin-right:40px}
+#page5 #content p{ padding-top:6px; padding-bottom:1px}
+#page5 figure{ background:#e3e3e3; padding:5px; margin-bottom:15px;}
+#page5 .marg_right2{ margin-right:115px;}
+#page6 #content2{ padding-top:0; margin-top:-2px; line-height:20px;}
+#page6 #content2 p{ padding-bottom:20px;}
+
+#icons{ float:right; padding:2px 26px 0 0}
+#icons li{ float:left; padding-left:17px;}
+
+.carousel-box .inner1{ position:relative; width:100%;}
+.gallery1{}
+.works-list li{ float:left; width:440px; padding-right:40px; }
+.works-list .no_pad{ padding-right:0}
+.gallery1 .pad_bot1 img{ padding-bottom:20px;}
+
+.inner1 .next{ position:absolute; top:-55px; right:0px; background:url('/assets/marker_right2.png') no-repeat; display:block; width:38px; height:33px;}
+.inner1 .prev{ position:absolute; top:-55px; right:39px; background:url('/assets/marker_left2.png') no-repeat; display:block; width:38px; height:33px;}
+.inner1 .next:hover{ background:url('/assets/marker_right2_active.png') no-repeat}
+.inner1 .prev:hover{ background:url('/assets/marker_left2_active.png') no-repeat}
+
+iframe{ margin-top:-3px;}
+
+/* ============================= footer ====================== */
+
+footer { font-size:11px; color:#636363; padding:15px 37px 35px; text-align:right}
+footer a{ color:#636363}
+footer span{ text-transform:uppercase}
+
+/* ============================= forms ============================= */
+
+#ContactForm .textarea_box .bg{ height:156px;}
+#ContactForm .wrapper{ min-height:55px;}
+#ContactForm .textarea_box{ min-height:178px; width:100%; overflow:hidden}
+#ContactForm .bg{ float:left; background:#e3e3e3; border:1px solid #c8c8c8;border-radius:16px; -moz-border-radius:16px; -webkit-border-radius:16px;behavior: url(js/pie.php); position: relative;}
+#ContactForm a{ margin-right:10px; margin-left:5px;}
+#ContactForm .input {width:387px; height:17px; background:none; padding:8px 15px;color:#40434c; font:14px Arial, Helvetica, sans-serif;}
+#ContactForm textarea { overflow: auto; width:577px; height:140px; background:none; padding:8px 15px;color:#40434c; font:14px Arial, Helvetica, sans-serif;}
+
+
+
